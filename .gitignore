@@ -1,0 +1,13 @@
+.env
+.env.local
+node_modules/
+dist/
+npm-debug.log*
+package-lock.json
+.openclaw/
+.openclaw-docker/
+workspace/.openclaw/
+workspace/state/
+tmp/
+coverage/
+.env.docker

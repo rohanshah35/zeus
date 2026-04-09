@@ -1,0 +1,14 @@
+{
+  "name": "secretary-openclaw-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw morning recap agent with Telegram delivery, RSS news collection, and secure email summaries.",
+  "type": "module",
+  "scripts": {
+    "start:mcp": "node src/mcp-server.js",
+    "check": "node --check src/mcp-server.js && node --check src/rss.js && node --check src/env.js && node --check src/config.js"
+  },
+  "engines": {
+    "node": ">=20.15.0"
+  }
+}

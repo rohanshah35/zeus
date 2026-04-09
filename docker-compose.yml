@@ -1,0 +1,32 @@
+services:
+  openclaw-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: secretary-openclaw
+    restart: unless-stopped
+    ports:
+      - "18789:18789"
+    env_file:
+      - .env.docker
+    environment:
+      OPENCLAW_CONFIG_PATH: /home/node/.openclaw/openclaw.json
+      OPENCLAW_STATE_DIR: /home/node/.openclaw
+    volumes:
+      - ./.openclaw-docker:/home/node/.openclaw
+    command: ["openclaw", "gateway"]
+
+  openclaw-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    profiles: ["tools"]
+    env_file:
+      - .env.docker
+    environment:
+      OPENCLAW_CONFIG_PATH: /home/node/.openclaw/openclaw.json
+      OPENCLAW_STATE_DIR: /home/node/.openclaw
+    volumes:
+      - ./.openclaw-docker:/home/node/.openclaw
+    entrypoint: ["openclaw"]
+    command: ["status"]

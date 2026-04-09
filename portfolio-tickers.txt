@@ -1,0 +1,14 @@
+# ETFs
+VOO
+QQQ
+
+# Stocks
+GOOGL
+RKLB
+ASTS
+QTUM
+NLR
+V
+
+# Crypto
+BITCOIN

@@ -1,0 +1,10 @@
+.git
+.env
+.env.docker
+.openclaw
+.openclaw-docker
+node_modules
+npm-debug.log*
+coverage
+tmp
+
