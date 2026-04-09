@@ -1,6 +1,5 @@
 # ETFs
 VOO
-QQQ
 
 # Stocks
 GOOGL
