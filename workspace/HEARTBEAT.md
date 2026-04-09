@@ -62,9 +62,11 @@ Formatting rules:
 - Send Message 1 first and wait for the send tool to succeed.
 - Only after Message 1 succeeds, send Message 2.
 - Only after Message 2 succeeds, send Message 3.
-- Keep each individual Telegram message under 4000 characters.
+- Keep Message 2 under 3750 characters.
+- Keep all other individual Telegram messages under 3750 characters.
 - Keep it concise when the news is light and go deeper when the news is genuinely important.
 - Avoid repetition, filler, and low-signal bullets.
 - If there are no portfolio tickers configured, say that briefly and move on.
 - If a tool fails, mention the missing section briefly instead of pretending it succeeded.
 - The final encouraging sentence should feel fresh and simple, not cheesy.
+- Never send status updates about message limits, retries, or delivery mechanics to Rohan.
