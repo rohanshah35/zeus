@@ -10,8 +10,8 @@ When triggered for the morning recap:
 
 Message 1:
 
-- Greeting to Rohan with `🐻‍❄️`
-- Date line: `Today is DAY, MONTH/DAY.`
+- Greeting to Rohan with `🐻‍❄️` (should be bold using `**...**`)
+- Date line: `Today is DAY, MONTH/DAY.` (should be bold using `**...**`)
 - Blank line
 - One short, unique fun fact starting with `Did you know that ... ?`
 
